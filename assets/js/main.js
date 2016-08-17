@@ -185,7 +185,7 @@ $(function(){
 	 		$('body').animate({
 	 			marginLeft : '-295'
 	 		});
-	 		$(".rightBarMenu").css({	`
+	 		$(".rightBarMenu").css({
 	 			display: 'block'
 	 		}).animate({
 	 			marginLeft : '250'

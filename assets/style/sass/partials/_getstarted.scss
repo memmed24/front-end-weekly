@@ -1,10 +1,64 @@
 @import "variables.scss";
 
 #getStarted{
+	text-align: center;
+	height: 600px;
 	padding-top: 200px;
-	p{
-		span{
-			
-		}
+	.gsfadeIn{
+		display: none;
+			p{
+				font-size: 50px;
+				color: white;
+				letter-spacing: 2px;
+				span{
+					color: $fontBlue;
+				}
+			}
+			h5{
+				color: white;
+				font-size: 22px;
+			}
+			ul{
+				margin-top: 20px;
+				li{
+					display: inline-block;
+					#gsbtn{
+						color: white;
+						height: 47px;
+						width: 211px;
+						font-weight: 900;
+						border-radius: 2px;
+						border: 0px;
+						background-color: #19C5FF;
+						margin-right: 15px;
+						-webkit-transition: all 200ms linear;
+						   -moz-transition: all 200ms linear;
+						    -ms-transition: all 200ms linear;
+						     -o-transition: all 200ms linear;
+						        transition: all 200ms linear;
+						&:hover{
+							background-color: #2FCBFF;
+						}
+					}
+					#gsbtn1{
+						height: 47px;
+						width: 143px;
+						border-radius: 2px;
+						border: 1px solid white;
+						background-color: transparent;
+						font-weight: 900;
+						color: white;
+						-webkit-transition: all 200ms linear;
+						   -moz-transition: all 200ms linear;
+						    -ms-transition: all 200ms linear;
+						     -o-transition: all 200ms linear;
+						        transition: all 200ms linear;
+						&:hover{
+							background-color: white;
+							color: $fontBlue;
+						}
+					}
+				}
+			}
 	}
 }

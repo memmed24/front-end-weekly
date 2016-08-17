@@ -1,0 +1,38 @@
+#rich{
+    height: 510px;
+    background-color: #F0F0F0;
+    .container{
+        .col-md-3{
+            padding-top: 42px;
+            .rich-list{
+                height: 137px;
+                width: 313px;
+                //background-color: #1AC6FF;
+                background-color: #F0F0F0;
+                border-radius: 10px;
+                padding-top: 20px;
+                padding-left: 20px;
+                p{
+                    font-weight: 900;
+                    color: #1AC6FF;
+                    font-size: 17px;
+                }
+                h4{
+                    font-size: 14px;
+                }
+                
+            }
+            .active-rich{
+                    background-color: #1AC6FF;
+                    p{
+                    color:white;
+                    }
+                
+            }
+        }
+        .col-md-9{
+            img{
+            }
+        }
+    }
+}

@@ -26,8 +26,8 @@
   padding-top: 16px; }
   .centerMenu .topBar-lists li {
     display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-bottom: 12px;
     padding-top: 12px; }
     .centerMenu .topBar-lists li a {
@@ -345,7 +345,228 @@
             background-color: #1AC6FF;
             color: white; } }
 #getStarted {
+  text-align: center;
+  height: 600px;
   padding-top: 200px; }
+  #getStarted .gsfadeIn {
+    display: none; }
+    #getStarted .gsfadeIn p {
+      font-size: 50px;
+      color: white;
+      letter-spacing: 2px; }
+      #getStarted .gsfadeIn p span {
+        color: #2AB6FF; }
+    #getStarted .gsfadeIn h5 {
+      color: white;
+      font-size: 22px; }
+    #getStarted .gsfadeIn ul {
+      margin-top: 20px; }
+      #getStarted .gsfadeIn ul li {
+        display: inline-block; }
+        #getStarted .gsfadeIn ul li #gsbtn {
+          color: white;
+          height: 47px;
+          width: 211px;
+          font-weight: 900;
+          border-radius: 2px;
+          border: 0px;
+          background-color: #19C5FF;
+          margin-right: 15px;
+          -webkit-transition: all 200ms linear;
+          -moz-transition: all 200ms linear;
+          -ms-transition: all 200ms linear;
+          -o-transition: all 200ms linear;
+          transition: all 200ms linear; }
+          #getStarted .gsfadeIn ul li #gsbtn:hover {
+            background-color: #2FCBFF; }
+        #getStarted .gsfadeIn ul li #gsbtn1 {
+          height: 47px;
+          width: 143px;
+          border-radius: 2px;
+          border: 1px solid white;
+          background-color: transparent;
+          font-weight: 900;
+          color: white;
+          -webkit-transition: all 200ms linear;
+          -moz-transition: all 200ms linear;
+          -ms-transition: all 200ms linear;
+          -o-transition: all 200ms linear;
+          transition: all 200ms linear; }
+          #getStarted .gsfadeIn ul li #gsbtn1:hover {
+            background-color: white;
+            color: #2AB6FF; }
+
+#clients {
+  background-color: #F0F0F0;
+  overflow: hidden;
+  padding-top: 50px; }
+  #clients .cclients .cclients2 {
+    height: 128px; }
+    #clients .cclients .cclients2 .odd {
+      transition: all 5s 1;
+      -webkit-transform: translateY(-170px);
+      -moz-transform: translateY(-170px);
+      -ms-transform: translateY(-170px);
+      -o-transform: translateY(-170px);
+      transform: translateY(-170px); }
+    #clients .cclients .cclients2 .even {
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -ms-transition: all 250ms linear;
+      -o-transition: all 250ms linear;
+      transition: all 250ms linear;
+      -webkit-transform: translateY(170px);
+      -moz-transform: translateY(170px);
+      -ms-transform: translateY(170px);
+      -o-transform: translateY(170px);
+      transform: translateY(170px); }
+    #clients .cclients .cclients2 .oddY {
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -ms-transition: all 250ms linear;
+      -o-transition: all 250ms linear;
+      transition: all 250ms linear;
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      transform: translateY(0px); }
+    #clients .cclients .cclients2 .evenY {
+      -webkit-transition: all 250ms linear;
+      -moz-transition: all 250ms linear;
+      -ms-transition: all 250ms linear;
+      -o-transition: all 250ms linear;
+      transition: all 250ms linear;
+      -webkit-transform: translateY(0px);
+      -moz-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+      -o-transform: translateY(0px);
+      transform: translateY(0px); }
+
+#news {
+  overflow: hidden;
+  padding-top: 58px; }
+  #news .news-first {
+    width: 100%; }
+    #news .news-first .news-first-button {
+      height: 60px;
+      width: 552;
+      margin-left: 400px; }
+      #news .news-first .news-first-button .news-frst-btns {
+        float: left;
+        height: 100%;
+        width: 184px;
+        border: 1px solid #e3e3e3;
+        background-color: white;
+        text-align: center;
+        padding-top: 20px;
+        transition: 150ms linear; }
+        #news .news-first .news-first-button .news-frst-btns:hover {
+          cursor: pointer;
+          background-color: #19C5FF;
+          color: white; }
+      #news .news-first .news-first-button .active-news-bar {
+        background-color: #19C5FF;
+        color: white; }
+  #news .news-sec {
+    height: 570px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #e3e3e3; }
+    #news .news-sec .news-sec-left {
+      display: inline-block;
+      margin-left: 120px;
+      margin-top: 50px;
+      transform: translateX(-700px); }
+    #news .news-sec .imgTranslate {
+      transition: 250ms linear;
+      transform: translateX(0px); }
+    #news .news-sec .news-sec-right {
+      display: inline-block;
+      position: absolute;
+      top: 125px;
+      transform: translateX(700px); }
+      #news .news-sec .news-sec-right .news-sec-right-top p {
+        font-size: 35px;
+        margin-left: 140px; }
+        #news .news-sec .news-sec-right .news-sec-right-top p span {
+          color: #1AC6FF; }
+      #news .news-sec .news-sec-right .news-sec-right-sec, #news .news-sec .news-sec-right .news-sec-right-third {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+        text-align: center; }
+      #news .news-sec .news-sec-right .news-sec-right-buttons {
+        padding-left: 150px; }
+        #news .news-sec .news-sec-right .news-sec-right-buttons ul li {
+          display: inline-block; }
+          #news .news-sec .news-sec-right .news-sec-right-buttons ul li button {
+            border: 1px solid #1AC6FF;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 3px;
+            margin-right: 20px;
+            transition: 250ms linear; }
+            #news .news-sec .news-sec-right .news-sec-right-buttons ul li button:hover {
+              background-color: #1AC6FF;
+              color: white; }
+    #news .news-sec .imgTranslate2 {
+      transition: 250ms linear;
+      transform: translateX(0px); }
+  #news .news-third {
+    height: 620px;
+    border-bottom: 1px solid #e2e2e2; }
+    #news .news-third .news-third-left {
+      display: inline-block;
+      padding-top: 150px;
+      transform: translateX(-650px);
+      padding-left: 30px;
+      padding-right: 50px; }
+      #news .news-third .news-third-left p {
+        font-size: 35px; }
+        #news .news-third .news-third-left p span {
+          color: #1AC6FF; }
+    #news .news-third .news-third-right {
+      display: inline-block; }
+      #news .news-third .news-third-right img {
+        transform: translateX(650px); }
+  #news .newsFourth .news-fourth-left img {
+    transform: translateX(-650px); }
+  #news .newsFourth .news-fourth-right {
+    padding-top: 80px;
+    transform: translateX(650px); }
+    #news .newsFourth .news-fourth-right p {
+      font-size: 35px;
+      margin-left: 210px; }
+      #news .newsFourth .news-fourth-right p span {
+        color: #1AC6FF; }
+    #news .newsFourth .news-fourth-right .nfrs {
+      padding-left: 25px; }
+    #news .newsFourth .news-fourth-right .nfrb {
+      padding-left: 25px; }
+
+#rich {
+  height: 510px;
+  background-color: #F0F0F0; }
+  #rich .container .col-md-3 {
+    padding-top: 42px; }
+    #rich .container .col-md-3 .rich-list {
+      height: 137px;
+      width: 313px;
+      background-color: #F0F0F0;
+      border-radius: 10px;
+      padding-top: 20px;
+      padding-left: 20px; }
+      #rich .container .col-md-3 .rich-list p {
+        font-weight: 900;
+        color: #1AC6FF;
+        font-size: 17px; }
+      #rich .container .col-md-3 .rich-list h4 {
+        font-size: 14px; }
+    #rich .container .col-md-3 .active-rich {
+      background-color: #1AC6FF; }
+      #rich .container .col-md-3 .active-rich p {
+        color: white; }
 
 body {
   font-family: 'Open Sans', sans-serif; }
