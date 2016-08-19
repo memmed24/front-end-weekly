@@ -1,3 +1,13 @@
+@keyframes firstLoremAnim {
+    0%{
+        transform:rotateX(90deg)
+    }
+    100%{
+        transform:rotateX(0deg)
+    }
+}
+
+
 #rich{
     height: 510px;
     background-color: #F0F0F0;
@@ -20,18 +30,23 @@
                 h4{
                     font-size: 14px;
                 }
-                
+                &:hover{
+                    cursor: pointer;
+                }
             }
             .active-rich{
                     background-color: #1AC6FF;
                     p{
-                    color:white;
+                        color:white;
                     }
                 
             }
         }
         .col-md-9{
             img{
+                animation:firstLoremAnim 1s 1;
+                animation-play-state: paused;
+                transform-origin:center bottom;
             }
         }
     }

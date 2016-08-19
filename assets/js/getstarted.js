@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	$('.gsfadeIn').fadeIn(800);
+	$('.gsfadeIn').fadeIn(1500);
 })

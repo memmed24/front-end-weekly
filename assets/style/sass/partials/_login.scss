@@ -1,0 +1,112 @@
+@keyframes myAnim{
+	0%{
+		-webkit-transform: translateX(-1150px);
+		   -moz-transform: translateX(-1150px);
+		    -ms-transform: translateX(-1150px);
+		     -o-transform: translateX(-1150px);
+		        transform: translateX(-1150px);
+	}
+	80%{
+		-webkit-transform: translateX(40px);
+		   -moz-transform: translateX(40px);
+		    -ms-transform: translateX(40px);
+		     -o-transform: translateX(40px);
+		        transform: translateX(40px);
+	}
+	100%{
+		-webkit-transform: translateX(0px);
+		   -moz-transform: translateX(0px);
+		    -ms-transform: translateX(0px);
+		     -o-transform: translateX(0px);
+		        transform: translateX(0px);
+	}
+}
+@keyframes myAnimSec{
+	0%{
+		-webkit-transform: translateX(1150px);
+		   -moz-transform: translateX(1150px);
+		    -ms-transform: translateX(1150px);
+		     -o-transform: translateX(1150px);
+		        transform: translateX(1150px);
+	}
+	80%{
+		-webkit-transform: translateX(-40px);
+		   -moz-transform: translateX(-40px);
+		    -ms-transform: translateX(-40px);
+		     -o-transform: translateX(-40px);
+		        transform: translateX(-40px);
+	}
+	100%{
+		-webkit-transform: translateX(0px);
+		   -moz-transform: translateX(0px);
+		    -ms-transform: translateX(0px);
+		     -o-transform: translateX(0px);
+		        transform: translateX(0px);
+	}
+}
+#login{
+	background-image: url('../../img/background.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	.container{
+		.col-md-12{
+			.login-left{
+				animation: myAnim 1s 1;
+				animation-play-state: paused;
+				.row{
+					.col-md-12{
+						p{
+							text-align: center;
+							font-size: 50px;
+							color: white;
+							margin-top: 20px;
+						}
+						h5{
+							color: white;
+							font-size: 14px;
+							text-align: center;
+							margin-top: -20px;
+							margin-bottom: 25px;
+						}
+					}
+				}
+			}
+			.login-right{
+				animation: myAnimSec 1s 1;
+				animation-play-state: paused;
+				ul{
+					li{
+						display: inline-block;
+						.feature-txt{
+							margin-top: 45px;
+							border: 0px;
+							border-left: 3px solid #1AC5FF;
+							padding-left: 19px;
+							padding-top: 10px;
+							padding-bottom: 10px;
+							margin-right:7px;
+						}
+						.feature-btn{
+							border: 0px;
+							background-color: transparent;
+							border: 1px solid white;
+							border-radius: 5px;
+							padding: 10px 27px;
+							color: white;
+							font-weight: 700;
+							-webkit-transition: all 200ms ease;
+							   -moz-transition: all 200ms ease;
+							    -ms-transition: all 200ms ease;
+							     -o-transition: all 200ms ease;
+							        transition: all 200ms ease;
+							&:hover{
+								background-color: white;
+								color: #1AC5FF;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
