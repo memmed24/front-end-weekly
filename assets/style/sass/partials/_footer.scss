@@ -1,0 +1,77 @@
+#footer{
+	background-image: url('../../img/background.jpg');
+	background-size: 100%;
+	background-position: center;
+	background-attachment: fixed;
+	padding-top: 55px;
+	.fl{
+		p{
+			color: #DDE9F1;
+			font-size: 35px;
+		}
+		.fl-2{
+			padding-right: 80px;
+			h5{
+				color: white;
+				line-height: 1.5;
+				letter-spacing: 1px;
+			}
+		}
+		h6{
+			color: white;
+			font-weight: 700;
+			font-size: 14px;
+		}
+	}
+	.fc{
+		text-align: center;
+		p{
+			text-align: center;
+			color: white;
+			font-weight: 700;
+			font-size: 20px;
+		}
+		i{
+			margin-top: 15px;
+			font-size: 50px;
+			color: #1AC6FF;
+			-webkit-transition: all 250ms ease;
+			   -moz-transition: all 250ms ease;
+			    -ms-transition: all 250ms ease;
+			     -o-transition: all 250ms ease;
+			        transition: all 250ms ease;
+			&:hover{
+				cursor: pointer;
+				color: #36ACED;
+			}
+		}
+	}
+	.fr{
+		p{
+			text-align: center;
+			color: white;
+			font-weight: 700;
+			font-size: 20px;
+		}
+		ul{
+			li{
+				display: block;
+				color: white;
+				padding: 10px 0px;
+				a{
+					color: #2EB3E6;
+				}
+				i{
+					color: #2EB3E6;
+				}
+			}
+		}
+	}
+	.fb{
+		padding-top: 35px;
+		p{
+			text-align: center;
+			color: #B1B9C5;	
+		}
+	}
+}

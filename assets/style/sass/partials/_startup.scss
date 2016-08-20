@@ -1,0 +1,49 @@
+#startup{
+	background-color: #1AC6FF;
+	padding-top: 45px;
+	padding-bottom: 35px;
+	.vol{
+		i{
+			color: white;
+			font-size: 55px;
+			margin-top: 20px;
+			-webkit-transform: rotate(-45deg);
+			   -moz-transform: rotate(-45deg);
+			    -ms-transform: rotate(-45deg);
+			     -o-transform: rotate(-45deg);
+			        transform: rotate(-45deg);
+		}
+	}
+	.launch{
+		p{
+			font-size: 46px;
+			color: white;
+		}
+		h5{
+			margin-top: -5px;
+			color: white;
+			letter-spacing: 1px;
+		}
+	}
+	.start-up-btn{
+		input{
+			border: 0px;
+			border: 1px solid white;
+			background-color: transparent;
+			border-radius: 2px;
+			padding: 15px 35px;
+			margin-top: 15px;
+			color: white;
+			-webkit-transition: all 250ms ease;
+			   -moz-transition: all 250ms ease;
+			    -ms-transition: all 250ms ease;
+			     -o-transition: all 250ms ease;
+			        transition: all 250ms ease;
+			&:hover{
+				background-color: white;
+				color: #1AC6FF;
+				border-color: #1AC6FF;
+			}
+		}
+	}
+}

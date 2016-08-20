@@ -1,0 +1,259 @@
+#developers{
+	.developer-row{
+		overflow: hidden;
+	}
+	padding-top: 45px;
+	padding-bottom: 50px;
+	.behind{
+			p{
+			text-align: center;
+			font-size: 45px;
+			letter-spacing: 1.2px;
+			span{
+				color: #22C8FF;
+			}
+		}
+	}
+	.dev-2{
+		padding: 0 90px;
+		margin-top: -5px;
+		h5{
+			text-align: center;
+			font-weight: 700;
+			letter-spacing: 1px;
+			line-height: 1.4;
+		}
+	}
+	.dev-3{
+		padding-top: 10px;
+		h5{
+			text-align: center;
+			font-weight: 700;
+			letter-spacing: 1px;
+			line-height: 1.5;
+			padding-bottom: 70px;
+		}
+	}
+	.person{
+		h4{
+			margin-top: 20px;
+			font-size: 16px;
+			text-align: center;
+			color: #1AC6FF;
+			font-weight: 600;
+		}
+		h5{
+			text-align: center;
+			font-weight: 600;
+		}
+	}
+	.dev-hover{
+		height: 262px;
+		width: 262px;
+		background-color: rgba(26, 198, 255, 0);
+		position: absolute;
+		margin-left: -15px;
+		margin-top: -344px;
+		padding-top: 45px;
+		padding-left: 15px;
+		padding-right: 15px;
+		-webkit-transition: all 250ms ease;
+		   -moz-transition: all 250ms ease;
+		    -ms-transition: all 250ms ease;
+		     -o-transition: all 250ms ease;
+		        transition: all 250ms ease;
+		p{
+			color: rgba(255,255,255, 0);
+			text-align: center;
+
+		-webkit-transition: all 250ms ease;
+		   -moz-transition: all 250ms ease;
+		    -ms-transition: all 250ms ease;
+		     -o-transition: all 250ms ease;
+		        transition: all 250ms ease;
+		}
+	}
+	.icons{
+		padding-top: 40px;
+		div{
+
+			float: left;
+			height: 35px;
+			width: 35px;
+			border:1px solid rgba(255,255,255, 0);
+			border-radius: 2px;
+			margin-left: 5px;
+			margin-right: 6px;
+			text-align: center;
+			line-height: 2.2;
+			-webkit-transition: all 250ms ease;
+		   -moz-transition: all 250ms ease;
+		    -ms-transition: all 250ms ease;
+		     -o-transition: all 250ms ease;
+		        transition: all 250ms ease;
+			i{
+				color: rgba(255,255,255, 0);
+		-webkit-transition: all 250ms ease;
+		   -moz-transition: all 250ms ease;
+		    -ms-transition: all 250ms ease;
+		     -o-transition: all 250ms ease;
+		        transition: all 250ms ease;
+			}
+		}
+	}
+	.person{
+		&:hover{
+			.dev-hover{
+				background-color: rgba(26, 198, 255, .7);
+				p{
+					color: rgba(255,255,255, 1);
+				}
+			}
+			.icons{
+				div{
+					border:1px solid rgba(255,255,255, 1);
+					i{
+						color: rgba(255,255,255, 1);
+					}
+					&:hover{
+						cursor: pointer;
+						background-color: white;
+						i{
+							color: rgba(26, 198, 255, .7)
+						}
+					}
+				}
+			}
+		}
+	}
+	.boy1{
+		animation: boyOne 1s 1;
+		animation-play-state: paused;
+	}
+	@keyframes boyOne{
+		0%{
+		-webkit-transform: translateY(-400px);
+		   -moz-transform: translateY(-400px);
+		    -ms-transform: translateY(-400px);
+		     -o-transform: translateY(-400px);
+		        transform: translateY(-400px);
+		}
+		80%{
+			-webkit-transform: translateY(25px);
+			   -moz-transform: translateY(25px);
+			    -ms-transform: translateY(25px);
+			     -o-transform: translateY(25px);
+			        transform: translateY(25px);
+		}
+		100%{
+			-webkit-transform: translateY(0);
+			   -moz-transform: translateY(0);
+			    -ms-transform: translateY(0);
+			     -o-transform: translateY(0);
+			        transform: translateY(0);
+		}
+	}
+	.girl1{
+		animation: girlOne 1s 1;
+		animation-play-state: paused;
+		//animation-delay: 1s;
+	}
+	@keyframes girlOne{
+		0%{
+		-webkit-transform: translateY(400px);
+		   -moz-transform: translateY(400px);
+		    -ms-transform: translateY(400px);
+		     -o-transform: translateY(400px);
+		        transform: translateY(400px);
+		}
+		20%{
+		-webkit-transform: translateY(400px);
+		   -moz-transform: translateY(400px);
+		    -ms-transform: translateY(400px);
+		     -o-transform: translateY(400px);
+		        transform: translateY(400px);
+		}
+		80%{
+			-webkit-transform: translateY(-25px);
+			   -moz-transform: translateY(-25px);
+			    -ms-transform: translateY(-25px);
+			     -o-transform: translateY(-25px);
+			        transform: translateY(-25px);
+		}
+		100%{
+			-webkit-transform: translateY(0);
+			   -moz-transform: translateY(0);
+			    -ms-transform: translateY(0);
+			     -o-transform: translateY(0);
+			        transform: translateY(0);
+		}
+	}
+	.boy2{
+		animation : boyTwo 1s 1;
+		animation-play-state: paused;
+	}
+	@keyframes boyTwo{
+		0%{
+		-webkit-transform: translateY(-400px);
+		   -moz-transform: translateY(-400px);
+		    -ms-transform: translateY(-400px);
+		     -o-transform: translateY(-400px);
+		        transform: translateY(-400px);
+		}
+		40%{
+		-webkit-transform: translateY(-400px);
+		   -moz-transform: translateY(-400px);
+		    -ms-transform: translateY(-400px);
+		     -o-transform: translateY(-400px);
+		        transform: translateY(-400px);
+		}
+		80%{
+			-webkit-transform: translateY(25px);
+			   -moz-transform: translateY(25px);
+			    -ms-transform: translateY(25px);
+			     -o-transform: translateY(25px);
+			        transform: translateY(25px);
+		}
+		100%{
+			-webkit-transform: translateY(0);
+			   -moz-transform: translateY(0);
+			    -ms-transform: translateY(0);
+			     -o-transform: translateY(0);
+			        transform: translateY(0);
+		}
+	}
+	.girl2{
+		animation: girlTwo 1s 1;
+		animation-play-state: paused;
+	}
+	@keyframes girlTwo{
+		0%{
+		-webkit-transform: translateY(400px);
+		   -moz-transform: translateY(400px);
+		    -ms-transform: translateY(400px);
+		     -o-transform: translateY(400px);
+		        transform: translateY(400px);
+		}
+		60%{
+		-webkit-transform: translateY(400px);
+		   -moz-transform: translateY(400px);
+		    -ms-transform: translateY(400px);
+		     -o-transform: translateY(400px);
+		        transform: translateY(400px);
+		}
+		80%{
+			-webkit-transform: translateY(-25px);
+			   -moz-transform: translateY(-25px);
+			    -ms-transform: translateY(-25px);
+			     -o-transform: translateY(-25px);
+			        transform: translateY(-25px);
+		}
+		100%{
+			-webkit-transform: translateY(0);
+			   -moz-transform: translateY(0);
+			    -ms-transform: translateY(0);
+			     -o-transform: translateY(0);
+			        transform: translateY(0);
+		}
+	}
+}
