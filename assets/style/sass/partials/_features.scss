@@ -1,4 +1,4 @@
-@keyframes myAnim{
+@keyframes feauresSec{
 	0%{
 		transform: translateX(1150px);
 	}
@@ -9,7 +9,7 @@
 		transform: translateX(0);
 	}
 }
-@keyframes myAnimSec{
+@keyframes features{
 	0%{
 		-webkit-transform: translateX(-1150px);
 		   -moz-transform: translateX(-1150px);
@@ -58,12 +58,12 @@
 			}
 		}
 		.features-top{
-			animation: myAnim 1s 1;
+			animation: features 1s 1;
 			animation-play-state: paused;
 		}
 		.features-bottom{
 			margin-top: 65px;
-			animation: myAnimSec 1s 1;
+			animation: feauresSec 1s 1;
 			animation-play-state: paused;
 		}
 	}

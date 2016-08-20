@@ -1,4 +1,4 @@
-@keyframes myAnim{
+	@keyframes update{
 	0%{
 		-webkit-transform: translateX(-1150px);
 		   -moz-transform: translateX(-1150px);
@@ -48,10 +48,11 @@
 	background-image: url('../../img/background.jpg');
 	background-position: center;
 	background-attachment: fixed;
+	overflow: hidden;
 	.container{
 		.col-md-12{
 			.login-left{
-				animation: myAnim 1s 1;
+				animation: update 1s 1;
 				animation-play-state: paused;
 				.row{
 					.col-md-12{
