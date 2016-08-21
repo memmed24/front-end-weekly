@@ -182,22 +182,12 @@ $(function(){
 
 	 $('.bar').on('click',function(){
 	 	if(a){
-	 		$('body').animate({
-	 			marginLeft : '-295'
-	 		});
-	 		$(".rightBarMenu").css({
-	 			display: 'block'
-	 		}).animate({
-	 			marginLeft : '250'
-	 		})
 	 		a =false;
-	 	}else{
-	 		$('body').animate({
-	 			marginLeft : '-0'
-	 		});
-	 		$(".rightBarMenu").css({
-	 			display : 'none'
+	 		$('#getStarted').css({
+	 			transition : '200ms all linear',
+	 			transform : 'translateX(-669px)'
 	 		})
+	 	}else{
 	 		a=true;
 	 	}
 		

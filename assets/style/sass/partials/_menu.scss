@@ -356,7 +356,9 @@ body{
 
 @media screen and (max-width: 768px){
 	body{
-		overflow: hidden;
+		img{
+			display: none;	
+		}
 	}
 	#menu{
 		height: 500px;
@@ -364,6 +366,7 @@ body{
 		background-position: center;
 		background-size: cover;
 		position: relative;
+		//overflow: hidden;
 	}
 	.leftMenu{
 		display: inline-block;
@@ -407,14 +410,13 @@ body{
 	
 
 	.rightBarMenu{
-		display: none;
 		height: 500px;
 		width: 320px;
-		float: right;
-		overflow: hidden;
-		margin-top: -67px;
-		margin-left: 723px;
 		transition: 250ms linear;
+		display: inline-block;
+		margin-left: 698px;
+		margin-top: -550px;
+		position: absolute;
 	}
 	.scroll-right{
 		height: 527px;

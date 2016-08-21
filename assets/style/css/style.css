@@ -257,8 +257,8 @@
       background-color: #272727; } }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow: hidden; }
+  body img {
+    display: none; }
 
   #menu {
     height: 500px;
@@ -301,14 +301,13 @@
     margin-left: 550px !important; }
 
   .rightBarMenu {
-    display: none;
     height: 500px;
     width: 320px;
-    float: right;
-    overflow: hidden;
-    margin-top: -67px;
-    margin-left: 723px;
-    transition: 250ms linear; }
+    transition: 250ms linear;
+    display: inline-block;
+    margin-left: 698px;
+    margin-top: -550px;
+    position: absolute; }
 
   .scroll-right {
     height: 527px;
@@ -348,9 +347,10 @@
 #getStarted {
   text-align: center;
   height: 600px;
-  padding-top: 200px; }
+  padding-top: 200px;
+  overflow: hidden; }
   #getStarted .gsfadeIn {
-    display: none; }
+    display: inline-block; }
     #getStarted .gsfadeIn p {
       font-size: 50px;
       color: white;
