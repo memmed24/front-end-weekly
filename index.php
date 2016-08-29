@@ -7,7 +7,7 @@
 		<!-- <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'> -->
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googl 	eapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 		<!-- bootstrap -->
 		<link rel="stylesheet" type="text/css" href="tools/bootstrap/bootstrap.min.css">
@@ -29,6 +29,10 @@
 		<script src = "assets/js/developers.js"></script>
 	</head>
 	<body>
+		<?php
+			include 'php/db.php';
+			include "php/src.php";
+		?>
 		<!-- menu -->
 		<section id="menu">
 			<div id="topBar" class="container-fluid">
@@ -308,18 +312,17 @@
 			</div>
 			<div class="news-sec">
 				<div class="news-sec-left">
-					<img src="assets/img/people.jpg" alt="">
+					<img src='<?php my_pic(); ?>' alt="">
 				</div>
 				<div class="news-sec-right">
 					<div class="news-sec-right-top">
-						<p>FOR EVERY <span>STARTUP</span></p>
+						<p> <?php my_header(); ?> </p>
 					</div>
 					<div class="news-sec-right-sec">
-						<h4>Lorem ipsum dolor sit atmet sit dolor greand fdanrh
-						sdfs sit atmet sit dolor greand fdanrh sdfs</h4>
+						<h4> <?php my_txt(); ?> </h4>
 					</div>
 					<div class="news-sec-right-third">
-						<h4>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</h4>
+						<h4> <?php my_txt();  ?> </h4>
 					</div>
 					<div class="news-sec-right-buttons">
 						<ul>
@@ -333,13 +336,11 @@
 			</div>
 			<div class="news-third">
 				<div class="col-md-6 news-third-left">
-					<p>NEW AGE <span>TECHNOLOGY</span></p>
-					<h4>Lorem ipsum dolor sit atmet sit dolor greand fdanrh
-					sdfs sit atmet sit dolor greand fdanrh sdfs</h4>
-					<h4>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</h4>
+					
+					<h4> <?php my_txt(); ?> </h4>
 				</div>
 				<div class="col-md-6 news-third-right">
-					<img src="assets/img/pc.png" alt="">
+					<img src = "<?php  ?>">
 				</div>
 			</div>
 			<div class="newsFourth">
@@ -347,13 +348,12 @@
 					<img src="assets/img/helmet.jpg">
 				</div>
 				<div class="col-md-6 news-fourth-right">
-					<p>HANG <span>ON TO</span> YER HELMET</p>
+					
 					<div class="nfrs">
-						<h4>Lorem ipsum dolor sit atmet sit dolor greand fdanrh
-						sdfs sit atmet sit dolor greand fdanrh sdfs</h4>
+						<h4><?php my_header(); ?> </h4>
 					</div>
 					<div class="nfrb">
-						<h4>In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret. Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur, quam non erat mirum sapientiae lorem cupido patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.</h4>
+						<h4><?php my_txt();  ?> </h4>
 					</div>
 				</div>
 			</div>
@@ -614,7 +614,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section id="quote">
 			<div class="container">
 				<div class="row quote-txt">
@@ -665,59 +664,59 @@
 		<section id="users">
 			<div class="users">
 				<div class="container contain">
-				<div class="col-md-12 ">
-					<div class="col-md-4 amy hover">
-						<div class="col-md-12">
-							<div class="col-md-5">
-								<img src="assets/img/profile-1.jpg">
-							</div>
-							<div class="col-md-7">
-								<div class="row">
-									<p>AMY WARNER</p>
+					<div class="col-md-12 ">
+						<div class="col-md-4 amy hover">
+							<div class="col-md-12">
+								<div class="col-md-5">
+									<img src="assets/img/profile-1.jpg">
 								</div>
-								<div class="row">
-									<h5>Investor at <span>Pear Inc.</span></h5>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 john active-user hover">
-						<div class="col-md-12">
-							<div class="col-md-5">
-								<img src="assets/img/profile-2.jpg">
-							</div>
-							<div class="col-md-7">
-								<div class="row">
-									<p>JOHN DOESOME</p>
-								</div>
-								<div class="row">
-									<h5>Accountant at <span>Vell Inc.</span></h5>
+								<div class="col-md-7">
+									<div class="row">
+										<p>AMY WARNER</p>
+									</div>
+									<div class="row">
+										<h5>Investor at <span>Pear Inc.</span></h5>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-4 peter hover">
-						<div class="col-md-12">
-							<div class="col-md-5">
-								<img src="assets/img/profile-1.jpg">
-							</div>
-							<div class="col-md-7">
-								<div class="row">
-									<p>PETER MOOSOME</p>
+						<div class="col-md-4 john active-user hover">
+							<div class="col-md-12">
+								<div class="col-md-5">
+									<img src="assets/img/profile-2.jpg">
 								</div>
-								<div class="row">
-									<h5>VP Marketing at <span>Footbook</span></h5>
+								<div class="col-md-7">
+									<div class="row">
+										<p>JOHN DOESOME</p>
+									</div>
+									<div class="row">
+										<h5>Accountant at <span>Vell Inc.</span></h5>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 peter hover">
+							<div class="col-md-12">
+								<div class="col-md-5">
+									<img src="assets/img/profile-1.jpg">
+								</div>
+								<div class="col-md-7">
+									<div class="row">
+										<p>PETER MOOSOME</p>
+									</div>
+									<div class="row">
+										<h5>VP Marketing at <span>Footbook</span></h5>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="container">
-				<div class="line col-md-offset-1">
-					<div class="inside-line"></div>
+				<div class="container">
+					<div class="line col-md-offset-1">
+						<div class="inside-line"></div>
+					</div>
 				</div>
-			</div>
 			</div>
 		</section>
 		
@@ -730,7 +729,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 dev-2">
-						<h5>Lorem ipsum dolor sit atmet sit dolor greand fdanrh s 
+						<h5>Lorem ipsum dolor sit atmet sit dolor greand fdanrh s
 						dfs sit atmet sit dolor greand fdanrh sdfs</h5>
 					</div>
 				</div>
@@ -779,7 +778,7 @@
 									</div>
 								</div>
 							</div>
-						
+							
 						</div>
 						<div class="col-md-3">
 							<div class="person girl1">
@@ -867,7 +866,6 @@
 			</div>
 		</section>
 		
-
 		<section id="startup">
 			<div class="container">
 				<div class="col-md-1 vol">
@@ -886,7 +884,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section id="footer">
 			<div class="container">
 				<div class="col-md-5 fl">
@@ -954,42 +951,41 @@
 		</section>
 	</body>
 </html>
-
 <!-- <div class="rightBarMenu">
-				<div class="scroll-right">
-					<div class="rightBarMenu-list">
-						<ul>
-							<li>
-								<a href="#">HOME</a>
-							</li>
-							<li>
-								<a href="#">ABOUT</a>
-							</li>
-							<li>
-								<a href="#">FEATURES</a>
-							</li>
-							<li>
-								<a href="#">PRICES</a>
-							</li>
-							<li>
-								<a href="#">FEEDBACK</a>
-							</li>
-							<li>
-								<a href="#">TEAM</a>
-							</li>
-							<li>
-								<a href="#">CONTACTS</a>
-							</li>
-							<li>
-								<a href="#">EXTRA</a>
-							</li>
-							<li>
-								<a href="#">LOGIN</a>
-							</li>
-							<li>
-								<button>SIGN UP</button>
-							</li>
-						</ul>
+					<div class="scroll-right">
+							<div class="rightBarMenu-list">
+									<ul>
+											<li>
+													<a href="#">HOME</a>
+											</li>
+											<li>
+													<a href="#">ABOUT</a>
+											</li>
+											<li>
+													<a href="#">FEATURES</a>
+											</li>
+											<li>
+													<a href="#">PRICES</a>
+											</li>
+											<li>
+													<a href="#">FEEDBACK</a>
+											</li>
+											<li>
+													<a href="#">TEAM</a>
+											</li>
+											<li>
+													<a href="#">CONTACTS</a>
+											</li>
+											<li>
+													<a href="#">EXTRA</a>
+											</li>
+											<li>
+													<a href="#">LOGIN</a>
+											</li>
+											<li>
+													<button>SIGN UP</button>
+											</li>
+									</ul>
+							</div>
 					</div>
-				</div>
-			</div> -->
+</div> -->
